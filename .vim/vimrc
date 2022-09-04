@@ -1,0 +1,92 @@
+"""" Plugins
+
+" Helps force plugins to load correctly when it is turned back on below
+filetype off
+
+" Specify a directory for plugins
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+Plug 'w0rp/ale'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'editorconfig/editorconfig-vim'
+Plug 'rust-lang/rust.vim'
+Plug 'preservim/tagbar'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'bling/vim-bufferline'
+Plug 'flazz/vim-colorschemes'
+Plug 'tpope/vim-fugitive'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'mhinz/vim-signify'
+Plug 'mhinz/vim-startify'
+Plug 'cespare/vim-toml', { 'branch': 'main' }
+Plug 'vimwiki/vimwiki'
+
+" Initialize plugin system
+call plug#end()
+
+
+"""" Basic Behavior
+
+set number              " show line numbers
+set encoding=utf-8      " set encoding to UTF-8 (default was "latin1")
+set wildmenu            " visual autocomplete for command menu
+set lazyredraw          " redraw screen only when we need to
+set showmatch           " highlight matching parentheses / brackets [{()}]
+set laststatus=2        " always show statusline (even with only single window)
+set ruler               " show line and column number of the cursor on right side of statusline
+set visualbell          " blink cursor on error, instead of beeping
+set noshowmode          " xLine statusline shows mode already
+set hidden              "
+
+
+"""" Key Bindings
+
+
+"""" Vim Appearance
+
+" put colorscheme files in ~/.vim/colors/
+colorscheme solarized      " good colorschemes: murphy, slate, molokai, badwolf, solarized
+
+" use filetype-based syntax highlighting, ftplugins, and indentation
+syntax on
+filetype plugin indent on
+
+
+"""" Tab settings
+
+set tabstop=4           " number of spaces per <TAB>
+set expandtab           " convert <TAB> key-presses to spaces
+set shiftwidth=4        " set a <TAB> key-press equal to 4 spaces
+
+set autoindent          " copy indent from current line when starting a new line
+set smartindent         " even better autoindent (e.g. add indent after '{')
+
+
+"""" Search settings
+
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+
+
+"""" Miscellaneous settings that might be worth enabling
+
+set cursorline          " highlight current line
+set background=dark     " configure Vim to use brighter colors
+colorscheme solarized
+
+"""" Plugin settings
+
+let g:airline_theme='solarized'  " Airline: Theme
+
+let g:ale_completion_enabled = 1                                               " ALE: Enable completion where available.
+let g:ale_sign_column_always=1                                                 " ALE: Always show sign gutter
+let g:ale_javascript_prettier_use_local_config=1                               " ALE: Prefer local config for JS prettier
+
+let g:signify_vcs_list=['git']                                                 " Signify: Default VCS to check
+
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]                   " VimWiki: Changing syntax
