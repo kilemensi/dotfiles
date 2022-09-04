@@ -8,5 +8,5 @@ set lines=46 columns=120     " initial window size
 if has("gui_macvim")         " configure font
     set guifont=Iosevka-SS07:h12
 else
-    set guifont=Iosevka-SS07\ 12
+    set guifont=Iosevka\ SS07\ 12
 endif
