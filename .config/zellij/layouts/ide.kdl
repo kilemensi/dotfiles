@@ -1,0 +1,17 @@
+layout {
+  pane size=1 borderless=true {
+    plugin location="zellij:compact-bar"
+  }
+  pane split_direction="vertical" {
+    pane name="nvim" size="70%" {
+      command "nvim"
+    }
+    pane split_direction="horizontal" size="30%" {
+      pane
+      pane
+    }
+  }
+  pane size=1 borderless=true {
+    plugin location="zellij:status-bar"
+  }
+}

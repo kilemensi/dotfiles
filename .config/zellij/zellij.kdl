@@ -1,0 +1,4 @@
+on_force_close "quit"
+simplified_ui true
+theme "solarized-dark"
+default_layout "compact"
