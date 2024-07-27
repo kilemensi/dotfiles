@@ -1,0 +1,11 @@
+[font.bold]
+family = "M+1Code Nerd Font Mono"
+style = "Semibold"
+
+[font.italic]
+family = "M+1Code Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "M+1Code Nerd Font Mono"
+style = "Regular"
