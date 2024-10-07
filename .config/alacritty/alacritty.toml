@@ -11,7 +11,7 @@ program = "zsh"
 args = ["--login"]
 
 [font]
-size = 13
+size = 14
 
 [window]
 blur = true
@@ -21,7 +21,7 @@ option_as_alt = "OnlyLeft"
 
 [window.dimensions]
 columns = 120
-lines = 60
+lines = 57
 
 [window.padding]
 x = 16
