@@ -1,4 +1,5 @@
 alias dotgit='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ll='eza -lh'
+alias ssh='TERM=xterm-256color ssh'
 alias yy='bat'
 alias :q='exit'
