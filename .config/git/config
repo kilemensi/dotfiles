@@ -1,0 +1,29 @@
+[branch]
+  sort = -committerdate
+[column]
+  ui = auto
+[commit]
+  verbose = true
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+  tool = nvimdiff
+[fetch]
+  prune = true
+  pruneTags = true
+  all = true
+[help]
+  autocorrect = prompt
+[init]
+	defaultBranch = main
+[merge]
+  conflictstyle = zdiff3
+  tool = nvimdiff
+[push]
+  default = simple
+  autoSetupRemote = true
+  followTags = true
+[tag]
+  sort = version:refname
