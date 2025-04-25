@@ -1,3 +1,4 @@
 theme = "Solarized Dark - Patched"
 font-family = "M+1Code Nerd Font Mono"
 font-size = 14
+macos-titlebar-style = "tabs"
