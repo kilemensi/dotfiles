@@ -1,0 +1,28 @@
+# Colors (Solarized Dark)
+
+# Default colors
+[colors.primary]
+background = '#001E27'
+foreground = '#708284'
+
+# Normal colors
+[colors.normal]
+black = '#002831'
+red = '#D11C24'
+green = '#738A05'
+yellow = '#A57706'
+blue = '#2176C7'
+magenta = '#C61C6F'
+cyan = '#259286'
+white = '#EAE3CB'
+
+# Bright colors
+[colors.bright]
+black = '#475B62'
+red = '#BD3613'
+green = '#475B62'
+yellow = '#657b83'
+blue = '#839496'
+magenta = '#6c71c4'
+cyan = '#93a1a1'
+white = '#fdf6e3'

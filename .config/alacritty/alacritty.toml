@@ -3,7 +3,7 @@ size = 14
 
 [general]
 import = [
-  "~/.config/alacritty/themes/solarized_dark.toml",
+  "~/.config/alacritty/themes/solarized_dark_patched.toml",
   "~/.config/alacritty/fonts/M+1CodeNFM.toml",
 ]
 
