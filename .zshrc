@@ -25,6 +25,11 @@ fi
 
 # Begin manual installations
 
+# Configure $HOME/.local/bin (add it to PATH if it exists)
+if [ -d "$HOME/.local/bin" ]; then
+  export PATH="$HOME/.local/bin:$PATH"
+fi
+
 # Configure fzf
 if type fzf &> /dev/null; then
     source <(fzf --zsh)
