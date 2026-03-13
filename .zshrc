@@ -1,7 +1,3 @@
-# Configure brew
-export HOMEBREW_NO_ANALYTICS=1
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # Configure brew completions
 if type brew &>/dev/null
 then
@@ -11,11 +7,9 @@ then
   compinit
 fi
 
-# Configure editor for local and remote sessions
+# Configure editor for remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
-else
-  export EDITOR='nvim'
 fi
 
 # Configure aliases
@@ -23,12 +17,7 @@ if [ -f $HOME/.aliases ]; then
 	source $HOME/.aliases
 fi
 
-# Begin manual installations
-
-# Configure $HOME/.local/bin (add it to PATH if it exists)
-if [ -d "$HOME/.local/bin" ]; then
-  export PATH="$HOME/.local/bin:$PATH"
-fi
+# Begin custom installations
 
 # Configure fzf
 if type fzf &> /dev/null; then
@@ -51,4 +40,4 @@ if type starship &> /dev/null; then
     eval "$(starship init zsh)"
 fi
 
-# End manual installations
+# End custom installations
