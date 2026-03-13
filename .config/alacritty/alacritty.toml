@@ -14,7 +14,7 @@ opacity = 0.9
 option_as_alt = "OnlyLeft"
 
 [window.dimensions]
-columns = 120
+columns = 220
 lines = 57
 
 [window.padding]
