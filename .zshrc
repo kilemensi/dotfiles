@@ -13,11 +13,19 @@ if [[ -n $SSH_CONNECTION ]]; then
 fi
 
 # Configure aliases
-if [ -f $HOME/.aliases ]; then
-	source $HOME/.aliases
+if [ -f "$HOME/.aliases" ]; then
+	source "$HOME/.aliases"
 fi
 
 # Begin custom installations
+
+# Configure telemetry e.g. claude
+export DISABLE_TELEMETRY=1
+
+# Configure cargo
+if [ -f "$HOME/.cargo/env" ]; then
+  source "$HOME/.cargo/env"
+fi
 
 # Configure fzf
 if type fzf &> /dev/null; then
