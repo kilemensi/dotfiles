@@ -3,7 +3,9 @@ export HOMEBREW_NO_ANALYTICS=1
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Configure PATH
-. "$HOME/.local/bin/env"
+if [ -f "$HOME/.local/bin/env" ]; then
+  source "$HOME/.local/bin/env"
+fi
 
 # Configure editor for local sessions
 export EDITOR='nvim'
