@@ -19,8 +19,8 @@ fi
 
 # Begin custom installations
 
-# Configure telemetry e.g. claude
-export DISABLE_TELEMETRY=1
+# Configure telemetry e.g. claude, gh, etc.
+export {DISABLE_TELEMETRY,DO_NOT_TRACK}=1
 
 # Configure cargo
 if [ -f "$HOME/.cargo/env" ]; then
