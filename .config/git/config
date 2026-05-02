@@ -27,3 +27,8 @@
   followTags = true
 [tag]
   sort = version:refname
+[user]
+	name = kilemensi
+	email = kilemensi@gmail.com
+[core]
+	editor = nvim -f

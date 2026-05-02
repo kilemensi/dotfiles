@@ -1,6 +1,8 @@
 [settings]
 experimental = true
 idiomatic_version_file_enable_tools = []
+minimum_release_age = "2d"
+prereleases = false
 # python
 python.uv_venv_auto = "create|source" # create .venv if missing, then activate
 
@@ -13,6 +15,7 @@ python = "3.14"
 ruby = "latest"
 turbo = "2"
 usage = "latest"
+uv = "latest"
 
 [env]
 UV_PYTHON = { value = "{{ tools.python.path }}", tools = true }
