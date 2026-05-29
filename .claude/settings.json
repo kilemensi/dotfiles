@@ -1,5 +1,9 @@
 {
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
   "autoUpdatesChannel": "stable",
-  "model": "sonnet",
-  "telemetry": "off"
+  "telemetry": "off",
+  "theme": "auto"
 }
