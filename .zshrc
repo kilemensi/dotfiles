@@ -22,27 +22,28 @@ fi
 # Configure telemetry e.g. claude, gh, etc.
 export {DISABLE_TELEMETRY,DO_NOT_TRACK}=1
 
-# Configure cargo
-if [ -f "$HOME/.cargo/env" ]; then
-  source "$HOME/.cargo/env"
-fi
-
-# Configure fzf
-if type fzf &> /dev/null; then
-    source <(fzf --zsh)
-fi
-
-# Configure zoxide
-if type zoxide &> /dev/null; then
-    eval "$(zoxide init zsh)"
-fi
-
-# Configure mise
+# Configure mise: make mise-managed tools available first
 if type mise &> /dev/null; then
     eval "$(mise activate zsh)"
 fi
 
-# Configure starship
+# Configure editor for local sessions
+if type nvim &> /dev/null; then
+  export EDITOR="nvim"
+  export VISUAL="nvim"
+fi
+
+# Configure fzf: key bindings and completion
+if type fzf &> /dev/null; then
+    source <(fzf --zsh)
+fi
+
+# Configure zoxide: smarter cd command
+if type zoxide &> /dev/null; then
+    eval "$(zoxide init zsh)"
+fi
+
+# Configure starship: prompt should usually be last
 if type starship &> /dev/null; then
     export STARSHIP_CONFIG=~/.config/starship/starship.toml
     eval "$(starship init zsh)"

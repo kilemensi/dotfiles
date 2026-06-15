@@ -8,7 +8,8 @@ if [ -f "$HOME/.local/bin/env" ]; then
 fi
 
 # Configure editor for local sessions
-export EDITOR='nvim'
+export EDITOR="vim"
+export VISUAL="vim"
 
 # Load machine-specific secrets (NOT in Git)
 if [ -f "$HOME/.profile.local" ]; then
