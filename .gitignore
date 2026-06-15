@@ -1,5 +1,8 @@
 .dotfiles
 .DS_Store
 
+# local Brewfile
+Brewfile
+
 # local dotfiles
 .profile.local
