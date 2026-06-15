@@ -1,0 +1,4 @@
+# Web browser
+cask "google-chrome"
+# Tool to create and manage Outline servers, powered by Shadowsocks
+cask "outline-manager"

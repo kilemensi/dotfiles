@@ -1,0 +1,44 @@
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+# mise doesn't suport btop darwin/arm64 yet
+brew "btop"
+# Utilities for .cue and .toc files
+brew "cuetools"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# Distributed revision control system
+brew "git"
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
+# Simple terminal UI for git commands
+brew "mise"
+# Multi-purpose tool for manipulating and analyzing WAV files
+brew "shntool"
+# E-books management software
+cask "calibre"
+# Terminal-based AI coding assistant
+cask "claude-code"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
+# Web browser
+cask "firefox"
+cask "font-m+-nerd-font"
+# Audio player
+cask "foobar2000"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Password manager app
+cask "keepassxc"
+# Text editor
+cask "macvim-app"
+# Unpacks archive files
+cask "the-unarchiver"
+# Open-source code editor
+cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
+vscode "asvetliakov.vscode-neovim"
+vscode "github.github-vscode-theme"
+vscode "github.vscode-github-actions"
+vscode "oxc.oxc-vscode"
