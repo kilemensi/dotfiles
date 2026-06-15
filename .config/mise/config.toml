@@ -7,14 +7,24 @@ prereleases = false
 python.uv_venv_auto = "create|source" # create .venv if missing, then activate
 
 [tools]
+bat = "latest"
+eza = "latest"
+fastfetch = "latest"
+fd = "latest"
+fzf = "latest"
+gh = "latest"
+lazygit = "latest"
 lua = "5"
-node = "lts"
+neovim = "latest"
 "npm:@mariozechner/pi-coding-agent" = "latest"
-python = "3.14"
+node = "lts"
+ripgrep = "latest"
 ruby = "latest"
+sd = "latest"
+starship = "latest"
+tree-sitter = "latest"
 turbo = "^2"
 usage = "latest"
 uv = "latest"
-
-[env]
-UV_PYTHON = { value = "{{ tools.python.path }}", tools = true }
+yt-dlp = "latest"
+zoxide = "latest"

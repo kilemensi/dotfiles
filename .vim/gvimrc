@@ -1,12 +1,12 @@
 """" Vim Appearance
 
-set lines=46 columns=120     " initial window size
+set lines=51 columns=120     " initial window size
 
 
 """" Miscellaneous settings that might be worth enabling
 
 if has("gui_macvim")         " configure font
-    set guifont=Iosevka-SS07:h12
+    set guifont=M+1Code\ Nerd\ Font\ Mono:h13
 else
-    set guifont=Iosevka\ SS07\ 12
+    set guifont=M+1Code\ Nerd\ Font\ Mono\ 13
 endif
