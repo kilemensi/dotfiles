@@ -4,6 +4,6 @@
     "pr": ""
   },
   "autoUpdatesChannel": "stable",
-  "telemetry": "off",
-  "theme": "auto"
+  "theme": "auto",
+  "telemetry": "off"
 }
