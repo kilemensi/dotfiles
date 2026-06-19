@@ -7,17 +7,10 @@ then
   compinit
 fi
 
-# Configure editor for remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-fi
-
 # Configure aliases
 if [ -f "$HOME/.aliases" ]; then
 	source "$HOME/.aliases"
 fi
-
-# Begin custom installations
 
 # Configure telemetry e.g. claude, gh, etc.
 export {DISABLE_TELEMETRY,DO_NOT_TRACK}=1
@@ -27,10 +20,16 @@ if type mise &> /dev/null; then
     eval "$(mise activate zsh)"
 fi
 
-# Configure editor for local sessions
+# Configure editor: local sessions
 if type nvim &> /dev/null; then
   export EDITOR="nvim"
   export VISUAL="nvim"
+fi
+
+# Configure editor: remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+  export VISUAL="vim"
 fi
 
 # Configure fzf: key bindings and completion
@@ -48,5 +47,3 @@ if type starship &> /dev/null; then
     export STARSHIP_CONFIG=~/.config/starship/starship.toml
     eval "$(starship init zsh)"
 fi
-
-# End custom installations
