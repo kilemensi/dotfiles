@@ -8,7 +8,7 @@ python.uv_venv_auto = "create|source" # create .venv if missing, then activate
 
 [tools]
 bat = "latest"
-eza = "latest"
+"cargo:eza" = "latest"
 fastfetch = "latest"
 fd = "latest"
 fzf = "latest"
