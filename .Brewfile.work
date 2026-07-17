@@ -2,3 +2,5 @@
 cask "google-chrome"
 # Tool to create and manage Outline servers, powered by Shadowsocks
 cask "outline-manager"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"

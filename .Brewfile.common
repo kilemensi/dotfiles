@@ -38,6 +38,8 @@ cask "the-unarchiver"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+# Free cross-platform office suite, fresh version
+cask "libreoffice"
 vscode "asvetliakov.vscode-neovim"
 vscode "github.github-vscode-theme"
 vscode "github.vscode-github-actions"
