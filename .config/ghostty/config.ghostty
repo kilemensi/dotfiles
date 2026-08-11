@@ -1,5 +1,6 @@
 theme = "Solarized Dark Patched"
-font-family = "M+1Code Nerd Font Mono"
+# font-family = "M+1Code Nerd Font Mono"
+font-family = "IosevkaTerm NF"
 font-size = 15
 background-blur = true
 background-opacity = 0.95
