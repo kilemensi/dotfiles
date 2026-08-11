@@ -21,8 +21,7 @@ cask "calibre"
 cask "claude-code"
 # Web browser
 cask "firefox"
-cask "font-iosevka"
-cask "font-iosevka"
+cask "font-iosevka-ss07"
 cask "font-iosevka-term-nerd-font"
 cask "font-m+-nerd-font"
 # Audio player
