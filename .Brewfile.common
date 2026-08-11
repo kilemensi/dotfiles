@@ -19,8 +19,6 @@ brew "shntool"
 cask "calibre"
 # Terminal-based AI coding assistant
 cask "claude-code"
-# OpenAI's coding agent that runs in your terminal
-cask "codex"
 # Web browser
 cask "firefox"
 cask "font-m+-nerd-font"
