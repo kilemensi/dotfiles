@@ -26,6 +26,8 @@ cask "font-iosevka-term-nerd-font"
 cask "font-m+-nerd-font"
 # Audio player
 cask "foobar2000"
+# Free and open-source image editor
+cask "gimp"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Password manager app
