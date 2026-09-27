@@ -1,2 +1,6 @@
+# Free lossless audio codec
+brew "flac"
 # Client for the Google Drive storage service
 cask "google-drive"
+# Comic reader
+cask "yacreader"
