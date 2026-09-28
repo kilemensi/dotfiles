@@ -1,5 +1,4 @@
 [settings]
-experimental = true
 idiomatic_version_file_enable_tools = []
 minimum_release_age = "2d"
 prereleases = false
@@ -8,7 +7,8 @@ python.uv_venv_auto = "create|source" # create .venv if missing, then activate
 
 [tools]
 bat = "latest"
-"cargo:eza" = "latest"
+"eza" = "latest"
+codex = "latest"
 fastfetch = "latest"
 fd = "latest"
 fzf = "latest"
@@ -16,7 +16,6 @@ gh = "latest"
 go = "latest"
 lazygit = "latest"
 lua = "5"
-neovim = "latest"
 "npm:@earendil-works/pi-coding-agent" = "latest"
 node = "lts"
 ripgrep = "latest"
@@ -30,4 +29,3 @@ usage = "latest"
 uv = "latest"
 yt-dlp = "latest"
 zoxide = "latest"
-"aqua:openai/codex" = "latest"

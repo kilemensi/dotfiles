@@ -1,3 +1,7 @@
+# Simple, modern, secure file encryption
+brew "age"
+# Anthropic's official Claude AI desktop app
+cask "claude"
 # Web browser
 cask "google-chrome"
 # Tool to create and manage Outline servers, powered by Shadowsocks
