@@ -3,7 +3,16 @@
     "commit": "",
     "pr": ""
   },
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "medium"
+    }
+  },
   "autoUpdatesChannel": "stable",
+  "tui": "fullscreen",
   "theme": "auto",
   "telemetry": "off"
 }
