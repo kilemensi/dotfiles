@@ -18,7 +18,7 @@ brew "shntool"
 # E-books management software
 cask "calibre"
 # Terminal-based AI coding assistant
-cask "claude-code"
+cask "claude-code@latest"
 # Web browser
 cask "firefox"
 cask "font-iosevka-ss07"
